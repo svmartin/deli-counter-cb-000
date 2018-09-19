@@ -6,8 +6,8 @@ def line(deli)
     puts "The line is currently empty."
   else
     message = "The line is currently: "
-    deli.each_with_index { |customer, i| message += "#{i+1}. #{customer} "}.trim
-    puts message
+    deli.each_with_index { |customer, i| message += "#{i+1}. #{customer} "}
+    puts message.trim
   end
 end
 
