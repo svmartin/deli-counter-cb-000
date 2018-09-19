@@ -8,6 +8,7 @@ def line(deli)
     message = "The line is currently: "
     deli.each_with_index { |customer, i| message += "#{i+1}. #{customer}"}
     puts message
+  end
 end
 
 def take_a_number(deli, name)
@@ -22,4 +23,5 @@ def now_serving(deli)
     current_customer = deli.first
     deli.shift
     puts "Currently serving #{current_customer}."
+  end
 end
