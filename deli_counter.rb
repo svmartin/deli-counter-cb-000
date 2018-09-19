@@ -7,7 +7,7 @@ def line(deli)
   else
     message = "The line is currently: "
     deli.each_with_index { |customer, i| message += "#{i+1}. #{customer} "}
-    puts message.trim
+    puts message.strip
   end
 end
 
